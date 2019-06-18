@@ -10,27 +10,22 @@ Contract.make {
     /**
      * Request which completes with HTTP statusCode 200
      */
+    ignored: true
     request {
         method 'POST'
         url('/sum')
         headers {
             contentType(applicationJson())
         }
-        body''' \
-{ 
-    "number1": 1,
-    "number2": -3
-}
-'''
     }
     response {
-        status 500
+        status 200
         headers {
             contentType(applicationJson())
         }
         body''' \
 { 
-    "result": -99
+    "result": 0
 }
 '''
     }
