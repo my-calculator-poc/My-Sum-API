@@ -1,0 +1,53 @@
+swagger: "2.0"
+info:
+  description: ""
+  version: "0.1.0"
+  title: "My Sum API"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "petstore.swagger.io"
+basePath: "/v2"
+schemes:
+  - "https"
+  - "http"
+paths:
+  /sum:
+    post:
+      tags:
+        - "sum"
+      summary: "Sum 2 numbers"
+      description: "Sum 2 numbers"
+      operationId: "sum"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "body request used to execute the sum operation"
+          required: true
+          schema:
+            $ref: "#/definitions/SumRequest"
+      responses:
+        '200':
+          description: "A sum of numbers"
+
+definitions:
+
+  SumRequest:
+    type: "object"
+    required:
+      - "number1"
+      - "number2"
+    properties:
+      number1:
+        type: "integer"
+        format: "int64"
+        example: "1"
+      number2:
+        type: "integer"
+        format: "int64"
+        example: "2"
+
