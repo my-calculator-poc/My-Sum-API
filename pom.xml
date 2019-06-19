@@ -84,8 +84,8 @@
 						<goals>
 							<!-- By default we will not push the stubs back to SCM,
 							you have to explicitly add it as a goal
-							-->
 							<goal>pushStubsToScm</goal>
+							-->
 						</goals>
 					</execution>
 				</executions>
