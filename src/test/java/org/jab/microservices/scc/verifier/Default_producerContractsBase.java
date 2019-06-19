@@ -16,7 +16,7 @@ import org.springframework.web.context.WebApplicationContext;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = MainApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class SumBase {
+public class Default_producerContractsBase {
 
     @Autowired
     WebApplicationContext applicationContext;
