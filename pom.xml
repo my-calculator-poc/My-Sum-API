@@ -64,31 +64,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<packageWithBaseClasses>org.jab.microservices.scc.verifier</packageWithBaseClasses>
-					<!--
-					<testMode>MOCKMVC</testMode>
-					<testFramework>JUNIT</testFramework>
-					<skip>true</skip>
-					<skipTests>true</skipTests>
-					-->
-					<contractsRepositoryUrl>git://https://github.com/my-calculator-poc/my-calculator-contracts-center-domain1.git</contractsRepositoryUrl>
-					<contractDependency>
-						<groupId>${project.groupId}</groupId>
-						<artifactId>${project.artifactId}</artifactId>
-						<version>${project.version}</version>
-					</contractDependency>
-					<contractsMode>LOCAL</contractsMode>
 				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<!-- By default we will not push the stubs back to SCM,
-							you have to explicitly add it as a goal
-							<goal>pushStubsToScm</goal>
-							-->
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
