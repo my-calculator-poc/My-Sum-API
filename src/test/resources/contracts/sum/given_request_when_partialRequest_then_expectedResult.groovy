@@ -27,7 +27,8 @@ Contract.make {
         status 200
         body''' \
 { 
-    "result": 1
+    "result": 1,
+    "romanResult" : "I"
 }
 '''
     }
