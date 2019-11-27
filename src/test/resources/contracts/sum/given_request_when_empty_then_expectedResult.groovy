@@ -25,7 +25,8 @@ Contract.make {
         }
         body''' \
 { 
-    "result": 0
+    "result": 0,
+    "romanResult" : ""
 }
 '''
     }

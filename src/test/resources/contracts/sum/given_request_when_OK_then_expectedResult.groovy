@@ -30,7 +30,8 @@ Contract.make {
         }
         body''' \
 { 
-    "result": 4
+    "result": 4, 
+    "romanResult" : "IV"
 }
 '''
     }
